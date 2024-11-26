@@ -9,10 +9,10 @@
 <body>
     <form name="cdi" id="cdi" class="container" method="post">
         <p>Calculo % CDI:</p>
-        <label for="valoraplicadocdi">Valor Aplicado</label><br>
+        <label for="valoraplicadocdi">Investimento</label><br>
         <input type="number" id="valoraplicadocdi" name="valoraplicadocdi" min="0" required oninput="calculacdi();"><br>
     
-        <label for="taxacdihoje">Taxa CDI Hoje:</label><br>
+        <label for="taxacdihoje">Indice CDI (Ult. 12 meses):</label><br>
         <input type="number" id="taxacdihoje" name="taxacdihoje" min="0" required oninput="calculacdi();"><br>                      
     
         <label for="taxatitulocdi">Taxa Título CDI:</label><br>
@@ -22,17 +22,17 @@
         <input type="number" id="meses_cdi" name="meses_cdi" min="0" required oninput="calculacdi();"><br><br>  
 
         <input type="checkbox" id="semircdi" name="semircdi" value="T" oninput="calculacdi();">
-        <label for="semircdi"> Isento IR</label><br>
+        <label for="semircdi">Isento IR</label><br>
     
         <p>Valor Final: <input type="text" id="ValorFinalCDI" name="ValorFinalCDI" readonly/></p>  
     </form>
     
     <form name="ipca" id="ipca" class="container" method="post">
         <p>Calculo IPCA+:</p>
-        <label for="valoraplicadoipca">Valor Aplicado</label><br>
+        <label for="valoraplicadoipca">Investimento</label><br>
         <input type="number" id="valoraplicadoipca" name="valoraplicadoipca" min="0" required oninput="calculaIPCA();"><br>
     
-        <label for="taxahojeipca">IPCA:</label><br>
+        <label for="taxahojeipca">Indice IPCA (Ult. 12 meses):</label><br>
         <input type="number" id="taxahojeipca" name="taxahojeipca" min="0" required oninput="calculaIPCA();"><br>                      
     
         <label for="taxatituloipca">Taxa Titulo:</label><br>
@@ -42,14 +42,14 @@
         <input type="number" id="meses_ipca" name="meses_ipca" min="0" required oninput="calculaIPCA();"><br><br>  
 
         <input type="checkbox" id="semiripca" name="semiripca" value="T" oninput="calculaIPCA();">
-        <label for="semiripca"> Isento IR</label><br>
+        <label for="semiripca">Isento IR</label><br>
 
         <p>Valor Final: <input type="text" id="ValorFinalIPCA" name="ValorFinalIPCA" readonly/></p>       
     </form>
 
     <form name="prefixado" id="prefixado" class="container"  method="post">
-        <p>Calculo prefixado:</p>
-        <label for="valoraplicadoprefixado">Valor Aplicado</label><br>
+        <p>Calculo Prefixado:</p>
+        <label for="valoraplicadoprefixado">Investimento</label><br>
         <input type="number" id="valoraplicadoprefixado" name="valoraplicadoprefixado" min="0" required oninput="calculaprefixado();"><br><br>
     
         <label for="taxatituloprefixado">Taxa Titulo:</label><br>
@@ -59,17 +59,17 @@
         <input type="number" id="meses_prefixado" name="meses_prefixado" min="0" required oninput="calculaprefixado();"><br><br>  
 
         <input type="checkbox" id="semirprefixado" name="semirprefixado" value="T" oninput="calculaprefixado();">
-        <label for="semirprefixado"> Isento IR</label><br>
+        <label for="semirprefixado">Isento IR</label><br>
     
         <p>Valor Final: <input type="text" id="ValorFinalprefixado" name="ValorFinalprefixado" readonly/></p>       
     </form>
 
     <form name="cdimais" id="cdimais" class="container"  method="post">
-        <p>Calculo cdimais+:</p>
-        <label for="valoraplicadocdimais">Valor Aplicado</label><br>
+        <p>Calculo CDI+:</p>
+        <label for="valoraplicadocdimais">Investimento</label><br>
         <input type="number" id="valoraplicadocdimais" name="valoraplicadocdimais" min="0" required oninput="calculacdimais();"><br>
     
-        <label for="taxahojecdimais">cdimais:</label><br>
+        <label for="taxahojecdimais">Indice CDI(Ult. 12 meses):</label><br>
         <input type="number" id="taxahojecdimais" name="taxahojecdimais" min="0" required oninput="calculacdimais();"><br>                      
     
         <label for="taxatitulocdimais">Taxa Titulo:</label><br>
@@ -79,7 +79,7 @@
         <input type="number" id="meses_cdimais" name="meses_cdimais" min="0" required oninput="calculacdimais();"><br><br>  
 
         <input type="checkbox" id="semircdimais" name="semircdimais" value="T" oninput="calculacdimais();">
-        <label for="semircdimais"> Isento IR</label><br>
+        <label for="semircdimais">Isento IR</label><br>
     
         <p>Valor Final: <input type="text" id="ValorFinalcdimais" name="ValorFinalcdimais" readonly/></p>       
     </form>
