@@ -1,5 +1,5 @@
 function calculacdi(){
-    // Obter os valores dos campos
+    // Obter os valores dos camposs
     var valorAplicado = parseFloat(document.cdi.valoraplicadocdi.value);
     var taxaCdiHoje = parseFloat(document.cdi.taxacdihoje.value);
     var taxaTituloCdi = parseFloat(document.cdi.taxatitulocdi.value); 
