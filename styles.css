@@ -3,6 +3,7 @@ body {
     background-color: hsl(0, 0%, 98%);
     color: #333;
     font: 100% / normal sans-serif;
+    text-align: center;
   }
   
   main {
